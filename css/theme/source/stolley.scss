@@ -10,32 +10,57 @@
 @import "../template/settings";
 // ---------------------------------------------
 
+// Settings Override
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
 
+// Fonts
 
-// Include theme-specific fonts
-@font-face {
-	font-family: 'League Gothic';
-	src: url('../../lib/font/league_gothic-webfont.eot');
-	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
-		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
-		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+// Background of the presentation
+$backgroundColor: #2b2b2b;
 
-	font-weight: normal;
-	font-style: normal;
-}
+// Primary/body text
+$mainFont: "ff-tisa-web-pro", Georgia, sans-serif;
+$mainFontSize: 54px;
+$mainColor: #eee;
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+// Headings
+$headingFont: "nimbus-sans-condensed", "Times New Roman", Verdana, Impact, sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: lowercase;
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: $headingTextShadow;
 
-// Override theme settings (see ../template/settings.scss)
-$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+// Links and actions
+$linkColor: #13DAEC;
+$linkColorHover: lighten( $linkColor, 20% );
 
-// Background generator
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
 @mixin bodyBackground() {
-	@include radial-gradient( rgba(28,30,32,1), rgba(85,90,95,1) );
+  background: url(/assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+section { background-color: rgba(0,0,0,.4); }
+.reveal section { font-family: $headingFont; text-align: left; }
+.reveal section * { padding-left: 5%; }
+.reveal section {
+  h1,h2,h3,h4,h5,h6 { padding-left: 5%; }
+}
+.reveal blockquote { font-family: $mainFont; font-style: normal;}
 
+
+//Load up the default stuff
 
 // Theme template ------------------------------
 @import "../template/theme";
