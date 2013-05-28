@@ -1,7 +1,6 @@
 /**
- * Default theme for reveal.js.
+ * Stolley's custom theme for reveal.js.
  *
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
 
@@ -51,15 +50,43 @@ $selectionColor: #fff;
   background-size: cover;
 }
 
-section { background-color: rgba(0,0,0,.4); }
+.reveal section { background-color: rgba(0,0,0,.4); }
 .reveal section { font-family: $headingFont; text-align: left; }
-.reveal section * { padding-left: 5%; }
 .reveal section {
-  h1,h2,h3,h4,h5,h6 { padding-left: 5%; }
+  >p, >ol, >ul {
+    padding-left: 5%;
+  }
 }
-.reveal blockquote { font-family: $mainFont; font-style: normal;}
-
-
+.reveal {
+  .titleslide {
+    h2 { padding-bottom: .5em; }
+    small, h2 { color: #888; }
+  }
+  h1,h2,h3,h4,h5,h6 { padding-left: 5%; }
+  h1 {
+    font-size: 2em;
+    small {
+      display: block;
+      float: none;
+      font-size: .8em;
+    }
+  }
+  h2 { font-size: 1.6em; }
+}
+.reveal figure.quote {
+  blockquote {
+    font-family: $mainFont;
+    font-style: normal;
+  }
+  figcaption {
+    font-size: .8em;
+    text-align: right;
+    padding-right: 5%;
+    &:before {
+      content: "— ";
+    }
+  }
+}
 //Load up the default stuff
 
 // Theme template ------------------------------

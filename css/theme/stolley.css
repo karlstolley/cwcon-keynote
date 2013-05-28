@@ -1,24 +1,42 @@
+@charset "UTF-8";
 /**
- * Default theme for reveal.js.
+ * Stolley's custom theme for reveal.js.
  *
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-section {
+.reveal section {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .reveal section {
   font-family: "nimbus-sans-condensed", "Times New Roman", Verdana, Impact, sans-serif;
   text-align: left; }
 
-.reveal section * {
+.reveal section > p, .reveal section > ol, .reveal section > ul {
   padding-left: 5%; }
 
-.reveal section h1, .reveal section h2, .reveal section h3, .reveal section h4, .reveal section h5, .reveal section h6 {
+.reveal .titleslide h2 {
+  padding-bottom: .5em; }
+.reveal .titleslide small, .reveal .titleslide h2 {
+  color: #888; }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   padding-left: 5%; }
+.reveal h1 {
+  font-size: 2em; }
+  .reveal h1 small {
+    display: block;
+    float: none;
+    font-size: .8em; }
+.reveal h2 {
+  font-size: 1.6em; }
 
-.reveal blockquote {
+.reveal figure.quote blockquote {
   font-family: "ff-tisa-web-pro", Georgia, sans-serif;
   font-style: normal; }
+.reveal figure.quote figcaption {
+  font-size: .8em;
+  text-align: right;
+  padding-right: 5%; }
+  .reveal figure.quote figcaption:before {
+    content: "— "; }
 
 /*********************************************
  * GLOBAL STYLES
