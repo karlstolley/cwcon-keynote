@@ -18,7 +18,6 @@
 		<link rel="stylesheet" href="css/theme/stolley.css" id="theme">
 
 <style>
-.reveal .slides h1 small { display: block; float: none; }
 
 </style>
 
@@ -42,15 +41,16 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-			  <section>
+			  <section class="titleslide">
 			    <h1><small>In Search of</small> Troublesome<br /> Digital Writing</h1>
 			    <h2>A Meditation on Difficulty</h2>
-			    <p><a href="http://karlstolley.com/">Karl Stolley</a> || <a href="http://twitter.com/karlstolley">@karlstolley</a></p>
+			    <p>
+			      <a href="http://karlstolley.com/">Karl Stolley</a> :: <a href="http://twitter.com/karlstolley">@karlstolley</a></p>
 			  </section>
 
         <!--Introduction-->
         <section>
-          <h2>Question:</h2>
+          <h2>Question</h2>
           <p>
             What is the intellectual stature of the digital writer? The professor of digital
             writing? The professional digital writer (the web designer, developer, content
@@ -59,60 +59,88 @@
         </section>
         <section>
           <h2>The Universal Intellectual</h2>
-          <blockquote>
-            <p>
-              The ‘universal’ intellectual derives from the jurist or notable, and finds his fullest
-              manifestation in the writer...<br /> Foucault, “Truth and Power,” 128
-            </p>
-          </blockquote>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                The ‘universal’ intellectual derives from the jurist or notable, and finds his
+                fullest manifestation in the writer...
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 128</figcaption>
+          </figure>
         </section>
         <section>
-          <blockquote>
-            <p>
-              ...the threshold of <i>writing</i>, as the sacralizing mark of the [‘universal’]
-              intellectual, has disappeared.<br /> Foucault, “Truth and Power,” 127
-            </p>
-          </blockquote>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                ...the threshold of <i>writing</i>, as the sacralizing mark of the [‘universal’]
+                intellectual, has disappeared.
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 127</figcaption>
+          </figure>
         </section>
         <section>
-          <blockquote>
-            <p>
-              ...the fact that it was precisely a matter of theory, that he needed scientific
-              credentials...proves that the activity of the writer was no longer the focus of
-              things.<br /> Foucault, “Truth and Power,” 127
-            </p>
-          </blockquote>
+          <h2>Blame Theory?</h2>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                ...the fact that it was precisely a matter of theory, that he needed scientific
+                credentials... proves that the activity of the writer was no longer the focus of
+                things.
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 127</figcaption>
+          </figure>
         </section>
         <section>
           <h2>The Specific Intellectual</h2>
-          <blockquote>
-            <p>
-              The ‘specific’ intellectual derives from quite another figure, not the jurist or
-              notable, but the savant or expert. Foucault, “Truth and Power,” 128
-            </p>
-          </blockquote>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                The ‘specific’ intellectual derives from quite another figure, not the jurist or
+                notable, but the savant or expert.
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 128</figcaption>
+          </figure>
         </section>
         <section>
-          <h2>Oppenheimer</h2>
-          <blockquote>
-            <p>
-              It’s because he [as a ‘specific’ intellectual] had a direct and localized relation to
-              scientific knowledge and institutions that the atomic scientist could make his
-              intervention; but, since the nuclear threat affected the whole human race and the fate
-              of the world, his discourse could at the same time be the discourse of the universal.
-              Foucault, “Truth and Power,” 128
-            </p>
-          </blockquote>
+          <h2>Regarding Oppenheimer</h2>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                It’s because he [as a ‘specific’ intellectual] had a direct and localized relation
+                to scientific knowledge and institutions that the atomic scientist could make his
+                intervention...
+              </p>
+            </blockquote>
+          <figcaption>Foucault, “Truth and Power,” 128</figcaption>
+          </figure>
         </section>
         <section>
-          <blockquote>
-            <p>
-              One may even say that the role of the specific intellectual must become more and more
-              important in proportion to the political responsibilities which he is obliged
-              willy-nilly to accept, as a nuclear scientist, computer expert, pharmacologist, etc.
-              Foucault, “Truth and Power,” 130-131
-            </p>
-          </blockquote>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                ...but, since the nuclear threat affected the whole human race and the
+                fate of the world, his discourse could at the same time be the discourse of the
+                universal.
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 128</figcaption>
+          </figure>
+        </section>
+        <section>
+          <figure class="quote">
+            <blockquote>
+              <p>
+                ...the role of the specific intellectual must become more and
+                more important in proportion to the political responsibilities which he is obliged
+                willy-nilly to accept, as a nuclear scientist, computer expert, pharmacologist, etc.
+              </p>
+            </blockquote>
+            <figcaption>Foucault, “Truth and Power,” 130-131</figcaption>
+          </figure>
         </section>
 
 
@@ -216,8 +244,8 @@
 				rollingLinks: false,
 
 				theme: 'stolley', // available themes are in /css/theme
-				transition: 'page', // default/cube/page/concave/zoom/linear/fade/none
-				transitionSpeed: 'slow',
+				transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transitionSpeed: 'default',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
