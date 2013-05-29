@@ -56,6 +56,8 @@ $selectionColor: #fff;
   >p, >ol, >ul {
     padding-left: 5%;
   }
+  >ul>li { list-style-type: square; }
+  cite { font-style: italic; }
 }
 .reveal {
   .titleslide {
@@ -74,9 +76,14 @@ $selectionColor: #fff;
   h2 { font-size: 1.6em; }
 }
 .reveal figure.quote {
-  blockquote {
-    font-family: $mainFont;
-    font-style: normal;
+  h2,blockquote {
+  font-family: $mainFont;
+  font-style: normal;
+  }
+  h2 {
+    padding-left: 0;
+    font-size: 1em;
+    font-weight: bold;
   }
   figcaption {
     font-size: .8em;

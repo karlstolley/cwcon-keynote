@@ -12,6 +12,10 @@
 
 .reveal section > p, .reveal section > ol, .reveal section > ul {
   padding-left: 5%; }
+.reveal section > ul > li {
+  list-style-type: square; }
+.reveal section cite {
+  font-style: italic; }
 
 .reveal .titleslide h2 {
   padding-bottom: .5em; }
@@ -28,9 +32,13 @@
 .reveal h2 {
   font-size: 1.6em; }
 
-.reveal figure.quote blockquote {
+.reveal figure.quote h2, .reveal figure.quote blockquote {
   font-family: "ff-tisa-web-pro", Georgia, sans-serif;
   font-style: normal; }
+.reveal figure.quote h2 {
+  padding-left: 0;
+  font-size: 1em;
+  font-weight: bold; }
 .reveal figure.quote figcaption {
   font-size: .8em;
   text-align: right;
