@@ -64,7 +64,12 @@ $selectionColor: #fff;
     h2 { padding-bottom: .5em; }
     small, h2 { color: #888; }
   }
-  h1,h2,h3,h4,h5,h6 { padding-left: 5%; }
+  h1,h2,h3,h4,h5,h6 {
+    padding-left: 5%;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+  }
   h1 {
     font-size: 2em;
     small {
