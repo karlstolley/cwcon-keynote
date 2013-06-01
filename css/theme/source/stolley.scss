@@ -64,6 +64,17 @@ $selectionColor: #fff;
     h2 { padding-bottom: .5em; }
     small, h2 { color: #888; }
   }
+  section.image{
+    figure.screencap {
+
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border: 0px;
+      max-height: 13.5em;
+    }
+  }
   .error { color: red; }
   h1,h2,h3,h4,h5,h6 {
     padding-left: 5%;
