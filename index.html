@@ -257,6 +257,13 @@
             </p>
           </section>
           <section>
+            <ul>
+              <li>Structure (HTML)</li>
+              <li>Presentation (CSS)</li>
+              <li>Behavior (JavaScript + DOM)</li>
+            </ul>
+          </section>
+          <section>
             <h2>Irreversible</h2>
             <p>
               Once learned, threshold concepts cannot be unlearned,
@@ -266,6 +273,10 @@
             </p>
           </section>
           <section>
+<pre class="error">&lt;body&gt;&lt;font face=verdana&gt;</pre>
+<pre><code>html { font-family: Verdana, Helvetica, sans-serif; }</code></pre>
+          </section>
+          <section>
             <h2>Integrative</h2>
             <p>
               Threshold concepts expose relationships between knowledge
@@ -273,11 +284,29 @@
             </p>
           </section>
           <section>
+          <pre>$ cd www
+$ ls
+foo/
+$ ls foo/
+bar.html
+$ chmod 644 foo/bar.html
+</pre>
+<pre><code>&lt;a href="foo/bar.html"&gt;</code></pre>
+          </section>
+          <section>
             <h2>Bounded</h2>
             <p>
               Threshold concepts open up not to mastery, necessarily,
               but to additional thresholds, which must in turn be crossed.
             </p>
+          </section>
+          <section>
+            <pre>&lt;a href="http://ext.example.com/" <span class="error">target="_blank"</span>&gt;</pre>
+            <pre><code>/*jQuery*/
+$('a[href^="http://"]').click(function() {
+  window.open(this.href);
+  return false;
+});</code></pre>
           </section>
           <section>
             <h2>Troublesome</h2>
@@ -289,12 +318,29 @@
               across it.
             </p>
           </section>
+          <section class="image">
+            <figure class="screencap">
+              <img src="assets/twitter-writing.png" alt="Composing in Tweetbot." />
+            </figure>
+          </section>
+          <section>
+<pre><code>&lt;writing class="also-writing"&gt;More writing.&lt;/writing&gt;</code></pre>
+<pre><code>writing.also-writing {
+  writing: writing;
+  writing: writing, writing, writing;
+  writing: writing writing;
+}</code></pre>
+          </section>
           <section>
             <h2>Discursive</h2>
             <p>
               Threshold concepts change the manner and level of sophistication
               in which learners talk and write.
             </p>
+          </section>
+          <section>
+            <h2>Actual Student Project Memo</h2>
+            <p>“Towards the end of this project, I found both my HTML and CSS were getting messy. I started seeing a lot of classes and ids in my HTML, and my CSS had a lot of redundant properties and values. To simplify it, I put together selectors that shared the same properties and values. This made my CSS shorter and easier to read.”</p>
           </section>
         </section>
         <section>
