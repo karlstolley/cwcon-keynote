@@ -21,6 +21,8 @@
   padding-bottom: .5em; }
 .reveal .titleslide small, .reveal .titleslide h2 {
   color: #888; }
+.reveal .error {
+  color: red; }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   padding-left: 5%;
   -webkit-hyphens: none;
