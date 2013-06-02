@@ -42,7 +42,7 @@
 .reveal h2 {
   font-size: 1.6em; }
 
-.reveal figure.quote h2, .reveal figure.quote blockquote {
+.reveal figure.quote h2, .reveal figure.quote blockquote, .reveal figure.quote figcaption {
   font-family: "ff-tisa-web-pro", Georgia, sans-serif;
   font-style: normal; }
 .reveal figure.quote h2 {
@@ -50,7 +50,7 @@
   font-size: 1em;
   font-weight: bold; }
 .reveal figure.quote figcaption {
-  font-size: .8em;
+  font-size: .7em;
   text-align: right;
   padding-right: 5%; }
   .reveal figure.quote figcaption:before {

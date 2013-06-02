@@ -93,7 +93,7 @@ $selectionColor: #fff;
   h2 { font-size: 1.6em; }
 }
 .reveal figure.quote {
-  h2,blockquote {
+  h2,blockquote,figcaption {
   font-family: $mainFont;
   font-style: normal;
   }
@@ -103,7 +103,7 @@ $selectionColor: #fff;
     font-weight: bold;
   }
   figcaption {
-    font-size: .8em;
+    font-size: .7em;
     text-align: right;
     padding-right: 5%;
     &:before {
