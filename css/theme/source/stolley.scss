@@ -76,6 +76,10 @@ $selectionColor: #fff;
     }
   }
   .error { color: red; }
+  .highlight {
+    color: black;
+    background: yellow;
+  }
   h1,h2,h3,h4,h5,h6 {
     padding-left: 5%;
     -webkit-hyphens: none;
@@ -96,6 +100,7 @@ $selectionColor: #fff;
   h2,blockquote,figcaption {
   font-family: $mainFont;
   font-style: normal;
+  line-height: 1.1;
   }
   h2 {
     padding-left: 0;
