@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Troublesome Digital Writing: A Meditation on Difficulty</title>
+    <title>Stolley #kn3 - Troublesome Digital Writing: A Meditation on Difficulty</title>
 
     <meta name="description" content="Slides for my keynote presentation at #cwcon in Frostburg, MD.">
     <meta name="author" content="Karl Stolley">
@@ -68,8 +68,8 @@
         <section class="titleslide">
           <h1><small>In Search of</small> Troublesome<br /> Digital Writing</h1>
           <h2>A Meditation on Difficulty</h2>
-          <p>
-            <a href="http://karlstolley.com/">Karl Stolley</a> :: <a href="http://twitter.com/karlstolley">@karlstolley</a></p>
+          <pre>#cwcon #kn3</pre>
+          <p><a href="http://twitter.com/karlstolley">@karlstolley</a></p>
         </section>
 
         <!--Introduction-->
@@ -554,9 +554,9 @@ $('a[href^="http://"]').click(function() {
           <section>
             <figure class="quote">
               <blockquote>
-                <h2>Don't Program by Coincidence</h2>
+                <h2>Don’t Program by Coincidence</h2>
                 <p>
-                  Rely only on reliable things. Beware of acidental complexity, and don't confuse
+                  Rely only on reliable things. Beware of acidental complexity, and don’t confuse
                   a happy coincidence with a purposeful plan.
                 </p>
               </blockquote>
@@ -564,7 +564,7 @@ $('a[href^="http://"]').click(function() {
             </figure>
           </section>
         </section>
-        <!-- GENERATION -> May swap out with a Prag point -->
+        <!-- GENERATION -->
         <section>
           <section>
             <figure class="quote">
@@ -576,6 +576,27 @@ $('a[href^="http://"]').click(function() {
               </blockquote>
               <figcaption>Eric S. Raymond, <cite><a href="http://www.catb.org/esr/writings/taoup/html/ch01s06.html#id2878742">The Art of Unix Programming</a></cite></figcaption>
             </figure>
+          </section>
+          <section>
+            <p>HAML:</p>
+            <pre><code>!!! 5
+%html{lang: "en"}
+  %head
+    %title Threshold Concepts
+    %meta{charset: "utf-8"}
+  %body
+    %p Hello, world!</code></pre>
+            <p>Compiles to HTML5:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Threshold Concepts&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
           </section>
         </section>
         <!-- EXTENSIBILITY -->
@@ -607,7 +628,37 @@ $('a[href^="http://"]').click(function() {
             </figure>
           </section>
         </section>
-        <!--III. Building-->
+
+        <!--Professional Development-->
+        <section>
+          <h2>Professional Development</h2>
+          <ol>
+            <li class="fragment">Plain text. Everywhere. For everything.</li>
+            <li class="fragment">Web as platform (Web standards).</li>
+            <li class="fragment">Version control (Git).</li>
+          </ol>
+        </section>
+        <section>
+          <p>I may have been wrong...</p>
+        </section>
+        <section>
+          <h2>Intellectual curiosity may be more important than having a problem to solve.</h2>
+        </section>
+        <section>
+          <h2>Thank You.</h2>
+        </section>
+        <section>
+          <h2>Colophon</h2>
+          <p>
+            These slides were built using
+            <a href="https://github.com/hakimel/reveal.js/">reveal.js</a>; multiplexing powered by
+            a single drone at <a href="https://www.nodejitsu.com/">nodejitsu.com</a>. Slides hosted
+            at <a href="https://github.com/">GitHub</a> (the
+            <a href="https://github.com/karlstolley/cwcon-keynote">repository for these slides</a>
+            can be found there, too). Fonts by <a href="https://typekit.com/">TypeKit</a>.
+            Background textures by
+            <a href="http://wegraphics.net/downloads/deep-dark-texture-pack/">Nathan Brown</a>.
+        </section>
 
 
       </div>
