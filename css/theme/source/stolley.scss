@@ -23,9 +23,13 @@ $mainFont: "ff-tisa-web-pro", Georgia, sans-serif;
 $mainFontSize: 54px;
 $mainColor: #eee;
 
+// Flipped colors (dark on light)
+$mainColor: $backgroundColor;
+$backgroundColor: #eee;
+
 // Headings
 $headingFont: "nimbus-sans-condensed", "Times New Roman", Verdana, Impact, sans-serif;
-$headingColor: #eee;
+$headingColor: $mainColor;
 $headingLineHeight: 0.9em;
 $headingLetterSpacing: 0.02em;
 $headingTextTransform: lowercase;
@@ -43,16 +47,21 @@ $selectionColor: #fff;
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
-  background: url(/assets/background.jpg) no-repeat center center fixed;
+  background: url(/assets/background-light.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.reveal section { background-color: rgba(0,0,0,.4); }
+.reveal section { background-color: rgba(255,255,255,.9); }
 .reveal section { font-family: $headingFont; text-align: left; }
 .reveal section {
+  pre {
+    background-color: $mainColor;
+    color: $backgroundColor;
+    padding: .2em;
+  }
   >p, >ol, >ul {
     padding-left: 5%;
   }
@@ -96,6 +105,11 @@ $selectionColor: #fff;
   h2,blockquote,figcaption {
   font-family: $mainFont;
   font-style: normal;
+  line-height: 1.1;
+  }
+  blockquote {
+    background: inherit;
+    box-shadow: none;
   }
   h2 {
     padding-left: 0;
