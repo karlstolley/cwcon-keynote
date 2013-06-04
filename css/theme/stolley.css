@@ -32,6 +32,9 @@
   max-height: 13.5em; }
 .reveal .error {
   color: red; }
+.reveal .highlight {
+  color: black;
+  background: yellow; }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   padding-left: 5%;
   -webkit-hyphens: none;
@@ -50,9 +53,6 @@
   font-family: "ff-tisa-web-pro", Georgia, sans-serif;
   font-style: normal;
   line-height: 1.1; }
-.reveal figure.quote blockquote {
-  background: inherit;
-  box-shadow: none; }
 .reveal figure.quote h2 {
   padding-left: 0;
   font-size: 1em;

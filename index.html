@@ -309,7 +309,9 @@
             </p>
           </section>
           <section>
+            <p>Font tag in HTML (bad):</p>
 <pre class="error">&lt;body&gt;&lt;font face=verdana&gt;</pre>
+            <p>Fonts handled in CSS:</p>
 <pre><code>body { font-family: Verdana, Helvetica, sans-serif; }</code></pre>
           </section>
           <section>
@@ -320,13 +322,15 @@
             </p>
           </section>
           <section>
+          <p>Command-line interaction:</p>
           <pre>$ cd www
 $ ls
 foo/
 $ ls foo/
 bar.html
-$ chmod 644 foo/bar.html
+$ chmod 644 <span class="highlight">foo/bar.html</span>
 </pre>
+        <p>Anchor-tag path:</p>
 <pre><code>&lt;a href="foo/bar.html"&gt;</code></pre>
           </section>
           <section>
@@ -337,7 +341,9 @@ $ chmod 644 foo/bar.html
             </p>
           </section>
           <section>
+            <p>Seemingly legit HTML attribute:</p>
             <pre>&lt;a href="http://ext.example.com/" <span class="error">target="_blank"</span>&gt;</pre>
+            <p>Click behavior relocated to JavaScript:</p>
             <pre><code>/*jQuery*/
 $('a[href^="http://"]').click(function() {
   window.open(this.href);
