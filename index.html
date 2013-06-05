@@ -687,16 +687,26 @@ $('a[href^="http://"]').click(function() {
         transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
         transitionSpeed: 'default',
 
+        multiplex: {
+          // Example values. Generate your own.
+          secret: null, // null so the clients do not have control of the master presentation
+          id: 'b9fc83410cb4f350', // id, obtained from socket.io server
+          url: 'revealjs.jit.su:80' // Location of socket.io server
+        },
         // Optional libraries used to extend on reveal.js
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+          { src: 'plugin/multiplex/client.js', async: true }
+
           //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           //{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          //{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
           // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
           // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
         ]
       });
 
