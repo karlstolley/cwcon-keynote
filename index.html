@@ -689,7 +689,7 @@ $('a[href^="http://"]').click(function() {
 
         multiplex: {
           // Example values. Generate your own.
-          secret: null, // null so the clients do not have control of the master presentation
+          secret: '13703927927637941729', // null so the clients do not have control of the master presentation
           id: 'b9fc83410cb4f350', // id, obtained from socket.io server
           url: 'revealjs.jit.su:80' // Location of socket.io server
         },
@@ -698,7 +698,8 @@ $('a[href^="http://"]').click(function() {
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-          { src: 'plugin/multiplex/client.js', async: true }
+          { src: 'plugin/multiplex/client.js', async: true },
+          { src: 'plugin/multiplex/master.js', async: true }
 
           //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
